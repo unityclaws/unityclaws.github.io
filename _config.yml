@@ -11,7 +11,7 @@ github_repo: https://github.com/PavelPeng7/PavelPeng7.github.io # you code repos
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "Day Day UP!!!"
+sidebar-about-description: "The focused mind can pierce through stone."
 sidebar-avatar: /img/nuoCat.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
