@@ -55,7 +55,6 @@ layout: default
 <article>
     <div class="container">
         <div class="row">
-            
 
     <!-- Post Container -->
             <div class="
@@ -64,10 +63,15 @@ layout: default
                 post-container">
                 <video id="player-container-id" width="414" height="270" preload="auto" playsinline webkit-playsinline>
                 </video>
-
+                <!-- 初始化播放器并设置视频源 -->
                 <script>
-                    var player = TCPlayer("player-container-id", {
-                        file: "{{ page.video_url }}"
+                    document.addEventListener('DOMContentLoaded', function() {
+                        var player = TCPlayer("player-container-id", { /* 确保 ID 与上面的 video 标签中的 ID 匹配 */
+                            controls: true,
+                            autoplay: false,
+                            preload: 'auto'
+                        });
+                        player.src("{{ page.video_url }}"); // 使用 Liquid 模板标签插入视频地址
                     });
                 </script>
 
