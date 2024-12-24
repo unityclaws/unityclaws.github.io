@@ -2,6 +2,13 @@
 layout: default
 ---
 
+<!--播放器样式文件-->
+<link href="https://web.sdk.qcloud.com/player/tcplayer/release/v4.2.1/tcplayer.min.css" rel="stylesheet">
+<!--如果需要在 Chrome 和 Firefox 等现代浏览器中通过 H5 播放 HLS 格式的视频，需要在 tcplayer.v4.2.min.js 之前引入 hls.min.0.13.2m.js。-->
+<script src="https://web.sdk.qcloud.com/player/tcplayer/release/v4.2.1/libs/hls.min.0.13.2m.js"></script>
+<!--播放器脚本文件-->
+<script src="https://web.sdk.qcloud.com/player/tcplayer/release/v4.5.0/tcplayer.v4.5.0.min.js"></script>
+
 <!-- Image to hack wechat -->
 <!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
 <!-- <img src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" width="0" height="0"> -->
@@ -57,6 +64,19 @@ layout: default
                 col-lg-8 col-lg-offset-2
                 col-md-10 col-md-offset-1
                 post-container">
+                {% if page.video_url %}
+                <!-- 设置播放器容器 -->
+                <video id="player-container-id" width="414" height="270" preload="auto" playsinline webkit-playsinline>
+                </video>
+                <!-- 初始化播放器并设置视频源 -->
+                <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                        var player = TCPlayer("player-container-id", { /* 确保 ID 与上面的 video 标签中的 ID 匹配 */
+                        });
+                        player.src("{{ page.video_url }}"); // 使用 Liquid 模板标签插入视频地址
+                    });
+                </script>
+                {% endif %}
 
 				{{ content }}
 
