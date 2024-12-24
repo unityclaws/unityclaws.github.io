@@ -2,6 +2,10 @@
 layout: default
 ---
 
+<!--播放器样式文件-->
+<link href="https://web.sdk.qcloud.com/player/tcplayer/release/v4.2.1/tcplayer.min.css" rel="stylesheet">
+<!--播放器脚本文件-->
+<script src="https://web.sdk.qcloud.com/player/tcplayer/release/v4.5.0/tcplayer.v4.5.0.min.js"></script>
 <!-- Image to hack wechat -->
 <!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
 <!-- <img src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" width="0" height="0"> -->
@@ -51,12 +55,21 @@ layout: default
 <article>
     <div class="container">
         <div class="row">
+            
 
     <!-- Post Container -->
             <div class="
                 col-lg-8 col-lg-offset-2
                 col-md-10 col-md-offset-1
                 post-container">
+                <video id="player-container-id" width="414" height="270" preload="auto" playsinline webkit-playsinline>
+                </video>
+
+                <script>
+                    var player = TCPlayer("player-container-id", {
+                        file: "{{ page.video_url }}"
+                    });
+                </script>
 
 				{{ content }}
 
