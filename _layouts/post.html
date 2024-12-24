@@ -66,10 +66,11 @@ layout: default
                 </video>
                 <!-- 初始化播放器并设置视频源 -->
                 <script>
-                    var player = TCPlayer("player-container-id", { /* 确保 ID 与上面的 video 标签中的 ID 匹配 */
-                        reportable: false,
+                    document.addEventListener('DOMContentLoaded', function() {
+                        var player = TCPlayer("player-container-id", { /* 确保 ID 与上面的 video 标签中的 ID 匹配 */
+                        });
+                        player.src("{{ page.video_url }}"); // 使用 Liquid 模板标签插入视频地址
                     });
-                    player.src("{{ page.video_url }}"); // 使用 Liquid 模板标签插入视频地址
                 </script>
 
 				{{ content }}
