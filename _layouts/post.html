@@ -66,8 +66,30 @@ layout: default
                 post-container">
                 <!-- {% if page.video_url %} -->
                 <!-- 设置播放器容器 -->
-                <video id="player-container-id" width="818" height="540" preload="auto" playsinline webkit-playsinline>
-                </video>
+                <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    var player = document.getElementById('player-container-id');
+                
+                    function resizeVideo() {
+                        var screenWidth = window.innerWidth;
+                        if (screenWidth < 768) {
+                            player.style.width = '100%'; // Ensures full width on small devices
+                            player.style.height = '300px'; // Fixed height for small devices
+                        } else if (screenWidth >= 768 && screenWidth < 1200) {
+                            player.style.width = '100%'; // Full width for medium devices
+                            player.style.height = '400px'; // Moderate height for medium screens
+                        } else {
+                            player.style.width = '818px'; // Max width for large screens
+                            player.style.height = '540px'; // Max height for large screens
+                        }
+                    }
+                
+                    // Add event listener for window resize
+                    window.addEventListener('resize', resizeVideo);
+                    resizeVideo(); // Call resizeVideo initially to set size
+                });
+            </script>
+
                 <!-- 初始化播放器并设置视频源 -->
                 <script>
                     document.addEventListener('DOMContentLoaded', function() {
