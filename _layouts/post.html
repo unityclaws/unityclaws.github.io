@@ -2,7 +2,6 @@
 layout: default
 ---
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--播放器样式文件-->
 <link href="https://web.sdk.qcloud.com/player/tcplayer/release/v4.2.1/tcplayer.min.css" rel="stylesheet">
 <!--如果需要在 Chrome 和 Firefox 等现代浏览器中通过 H5 播放 HLS 格式的视频，需要在 tcplayer.v4.2.min.js 之前引入 hls.min.0.13.2m.js。-->
@@ -67,8 +66,28 @@ layout: default
                 post-container">
                 <!-- {% if page.video_url %} -->
                 <!-- 设置播放器容器 -->
-                <video id="player-container-id" preload="auto" playsinline webkit-playsinline>
-                </video>
+                <video id="player-container-id" preload="auto" playsinline webkit-playsinline></video>
+
+                <script>
+                  function adjustVideoSize() {
+                    var video = document.getElementById('player-container-id');
+                    var widthThreshold = 768; // 定义小屏幕的最大宽度
+                    if (window.innerWidth < widthThreshold) {
+                      video.width = 414;
+                      video.height = 270;
+                    } else {
+                      video.width = 818;
+                      video.height = 540;
+                    }
+                  }
+                
+                  // 页面加载时调整视频尺寸
+                  document.addEventListener('DOMContentLoaded', adjustVideoSize);
+                
+                  // 窗口尺寸变化时调整视频尺寸
+                  window.addEventListener('resize', adjustVideoSize);
+                </script>
+                
                 <!-- 初始化播放器并设置视频源 -->
                 <script>
                     document.addEventListener('DOMContentLoaded', function() {
