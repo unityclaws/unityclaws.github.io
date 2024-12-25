@@ -69,25 +69,33 @@ layout: default
                 <video id="player-container-id" preload="auto" playsinline webkit-playsinline></video>
 
                 <script>
-                  function adjustVideoSize() {
-                    var video = document.getElementById('player-container-id');
-                    var widthThreshold = 768; // 定义小屏幕的最大宽度
-                    if (window.innerWidth < widthThreshold) {
-                      video.width = 414;
-                      video.height = 270;
-                    } else {
-                      video.width = 818;
-                      video.height = 540;
+                    function adjustVideoSize() {
+                      var video = document.getElementById('player-container-id');
+                      var widthThreshold1 = 768; // 定义中等屏幕的最大宽度
+                      var widthThreshold2 = 384; // 定义小屏幕的最大宽度
+                  
+                      if (window.innerWidth <= widthThreshold2) {
+                        // 小于或等于 384px
+                        video.width = 256;
+                        video.height = 158;
+                      } else if (window.innerWidth <= widthThreshold1) {
+                        // 大于 384px 且小于或等于 768px
+                        video.width = 414;
+                        video.height = 270;
+                      } else {
+                        // 大于 768px
+                        video.width = 818;
+                        video.height = 540;
+                      }
                     }
-                  }
-                
-                  // 页面加载时调整视频尺寸
-                  document.addEventListener('DOMContentLoaded', adjustVideoSize);
-                
-                  // 窗口尺寸变化时调整视频尺寸
-                  window.addEventListener('resize', adjustVideoSize);
-                </script>
-                
+                  
+                    // 页面加载时调整视频尺寸
+                    document.addEventListener('DOMContentLoaded', adjustVideoSize);
+                  
+                    // 窗口尺寸变化时调整视频尺寸
+                    window.addEventListener('resize', adjustVideoSize);
+                  </script>
+
                 <!-- 初始化播放器并设置视频源 -->
                 <script>
                     document.addEventListener('DOMContentLoaded', function() {
