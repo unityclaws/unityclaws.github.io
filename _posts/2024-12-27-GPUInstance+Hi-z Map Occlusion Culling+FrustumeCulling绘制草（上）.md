@@ -192,6 +192,8 @@ tags:
 
 因为对于视锥体剔除来说，在裁剪空间和相机空间都行，但是相机空间就需要定义裁剪视锥体的六个面，而在裁剪空间中只需要跟标准NDC空间做判断，更简单效率高。并且人家叫裁剪空间目的就是裁剪。
 
+
+
 ```csharp
     if(posCS.w > MaxViewDistance)
         return;
@@ -205,6 +207,8 @@ tags:
 
 ![iShot_2024-12-27_13.07.57.png](https://pavelblog-images-1333471781.cos.ap-shanghai.myqcloud.com/undefined20241227130931977.png?imageSlim)
 投影矩阵
+
+这里涉及到投影的原理可前往[投影矩阵（Projection Matrix）]复习(https://pavelpeng7.github.io/2024/12/27/%E8%AF%BE18.-%E6%8A%95%E5%BD%B1%E7%9F%A9%E9%98%B5-Projection-Matrix/)复习
 
 ```csharp
     float size = 1.2;
