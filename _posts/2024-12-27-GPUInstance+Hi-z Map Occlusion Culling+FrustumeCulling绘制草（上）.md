@@ -208,7 +208,7 @@ tags:
 ![iShot_2024-12-27_13.07.57.png](https://pavelblog-images-1333471781.cos.ap-shanghai.myqcloud.com/undefined20241227130931977.png?imageSlim)
 投影矩阵
 
-这里涉及到投影的原理可前往[投影矩阵]复习(https://pavelpeng7.github.io/2024/12/27/%E8%AF%BE18.-%E6%8A%95%E5%BD%B1%E7%9F%A9%E9%98%B5-Projection-Matrix/)复习
+这里涉及到投影的原理可前往[投影矩阵](https://pavelpeng7.github.io/2024/12/27/%E8%AF%BE18.-%E6%8A%95%E5%BD%B1%E7%9F%A9%E9%98%B5-Projection-Matrix/)复习
 
 ```csharp
     float size = 1.2;
