@@ -2,8 +2,8 @@
 title: Willololo's Blog
 SEOTitle: 薇洛洛的博客 | Willololo's Blog
 header-img: img/post-bg-garden.png
-email: qq2726304042@gmail.com
-description: "CG Art and Technichal"
+email: 这里缺一个邮箱
+description: "2d Animation Artist"
 keyword: "Willololo, Willololo's Blog, 薇洛洛的博客, 薇洛洛"
 url: "https://Willololo7.github.io/"           # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
@@ -12,7 +12,7 @@ github_repo: https://github.com/Willololo7/Willololo7.github.io # you code repos
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "The focused mind can pierce through stone."
-sidebar-avatar: /img/nuoCat.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/HeadIcon.png      # use absolute URL, seeing it's used in both `/` and `/about/`
 future: true
 
 
