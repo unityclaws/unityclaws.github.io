@@ -1,7 +1,7 @@
 # Site settings
-title: Unity Claws's Store
+title: Unity爪爪的售后服务网站
 SEOTitle: unity爪爪的商店 | Unity爪爪的售后网站
-header-img: img/spring-festival-poster.png
+header-img: img/荒野大镖客_海雾.png
 email: 
 description: "【闲鱼】https://m.tb.cn/h.TRRSN7V?tk=aeUCeYA6wFQ MF1643 「这是我的闲鱼号，快来看看吧～」
 点击链接直接打开"
@@ -98,10 +98,10 @@ service-worker: true
 
 # Friends
 friends: [
-    # {
-    #     title: "WY",
-    #     href: "http://zhengwuyang.com"
-    # },{
+    {
+        title: "闲鱼",
+        href: "https://m.tb.cn/h.TRRSN7V?tk=aeUCeYA6wFQ"
+    }
     #     title: "Bilibili",
     #     href: "https://space.bilibili.com/606572628?spm_id_from=333.934.0.0"
     # },{
