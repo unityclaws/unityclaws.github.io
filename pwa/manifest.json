@@ -3,11 +3,11 @@
   "short_name": "Pavel's Blog",
   "description": "A personal blog by engineer",
   "icons": [{
-    "src": "icons/p_icon_128.png",
+    "src": "icons/img/UnityClaws-Head-25x25.png",
     "sizes": "128x128",
     "type": "image/png"
   }, {
-    "src": "icons/p_icon_512.png",
+    "src": "icons/img/UnityClaws-Head-500x500.png",
     "sizes": "512x512",
     "type": "image/png"
   }],
