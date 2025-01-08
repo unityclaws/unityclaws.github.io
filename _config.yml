@@ -1,6 +1,6 @@
 # Site settings
-title: unityclaws's Store
-SEOTitle: unity爪爪的商店 | unityclaws's store
+title: Unity Claws's Store
+SEOTitle: unity爪爪的商店 | Unity爪爪的售后网站
 header-img: img/post-bg-garden.png
 email: 
 description: ""
@@ -57,8 +57,6 @@ kramdown:
 
 
 # 评论系统
-# Disqus（https://disqus.com/）
-# disqus_username: WillololoPeng7
 
 # Gitalk
 gitalk:
