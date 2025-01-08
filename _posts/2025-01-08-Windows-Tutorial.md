@@ -4,7 +4,7 @@ title:      Windows播放字幕视频教程
 subtitle:   使用PotPlayer播放
 date:       2025-01-08
 author:     Pavel
-header-img: img/荒野大镖客_海雾.png
+header-img: img/DRD-Fire2.png
 catalog: true
 tags:
     - 字幕
