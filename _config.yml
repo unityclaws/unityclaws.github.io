@@ -1,17 +1,17 @@
 # Site settings
-title: Test's Blog
-SEOTitle: 测试的博客 | Test's Blog
+title: unityclaws's Store
+SEOTitle: unity爪爪的商店 | unityclaws's store
 header-img: img/post-bg-garden.png
-email: 这里缺一个邮箱
+email: 
 description: ""
 keyword: ""
-url: "https://Willololo7.github.io/"           # your host, for absolute URL
+url: "https://unityclaws.github.io/"           # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
-github_repo: https://github.com/Willololo7/Willololo7.github.io # you code repository
+github_repo: https://github.com/unityclaws/unityclaws.github.io # you code repository
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "The focused mind can pierce through stone."
+sidebar-about-description: "闲鱼搜索“Unity爪爪”获得更多精品课程"
 sidebar-avatar:       # use absolute URL, seeing it's used in both `/` and `/about/`
 future: true
 
@@ -21,8 +21,8 @@ future: true
 RSS: false
 # weibo_username:     qiubaiying
 zhihu_username:     
-github_username:    Willololo7
-bilibili_username:  6274571
+github_username:   
+bilibili_username: 
 jianshu_username:  
 #twitter_username:   qiubaiying
 
@@ -65,9 +65,9 @@ gitalk:
   enable: true    #是否开启Gitalk评论
   clientID: Ov23lijoyN89AwtzcS8n                            #生成的clientID
   clientSecret: 516e7e76f24b103b34a421cedeca8c50e4b13e00    #生成的clientSecret
-  repo: Willololo7.github.io    #仓库名称
-  owner: Willololo7    #github用户名
-  admin: Willololo7
+  repo: unityclaws.github.io    #仓库名称
+  owner: unityclaws    #github用户名
+  admin: unityclaws
   distractionFreeMode: true #是否启用类似FB的阴影遮罩
 
 
