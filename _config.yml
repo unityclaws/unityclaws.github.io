@@ -1,10 +1,11 @@
 # Site settings
 title: Unity Claws's Store
 SEOTitle: unity爪爪的商店 | Unity爪爪的售后网站
-header-img: img/post-bg-garden.png
+header-img: img/spring-festival-poster.png
 email: 
-description: ""
-keyword: ""
+description: "【闲鱼】https://m.tb.cn/h.TRRSN7V?tk=aeUCeYA6wFQ MF1643 「这是我的闲鱼号，快来看看吧～」
+点击链接直接打开"
+keyword: "课程售卖"
 url: "https://unityclaws.github.io/"           # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: https://github.com/unityclaws/unityclaws.github.io # you code repository
