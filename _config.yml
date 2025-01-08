@@ -99,7 +99,7 @@ service-worker: true
 # Friends
 friends: [
     {
-        title: "闲鱼",
+        title: "Unity爪爪的闲鱼链接",
         href: "https://m.tb.cn/h.TRRSN7V?tk=aeUCeYA6wFQ"
     }
     #     title: "Bilibili",
